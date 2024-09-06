@@ -1,0 +1,1 @@
+ScrollReveal().reveal('img', { distance: '50px', origin: 'bottom', duration: 800 });

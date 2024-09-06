@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+
+
+*{
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear  ;
+}
+
+html{
+    font-size: 85%;
+    scroll-behavior:smooth ;
+    scroll-padding-top: 6rem ;
+    overflow-x: hidden ;
+    background-color: #003866;
+}
+
+header{
+    font-size: 1.3rem;
+    background-color: #015eaa;
+    font-family:Baskervville SC;
+    padding: 1.5rem 6%;
+    display:block;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem #000731;
+}
+
+/* inicio da section*/
+
+section{
+    padding:  7rem 6%;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 7rem; max-width: 80%;
+    padding-left: 1rem;  gap: 8rem; }
+
+    h2{
+        font-family: Baskervville SC;
+    }
+.introdução{
+    min-width: 50rem;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 7rem;
+    background-color: #000731;
+    box-shadow: black 3px 3px 3px;
+    border-radius: 5rem;
+    color: white;
+}
+.pesquisa{
+   background-color: rebeccapurple;
+}
+
+.btn{
+
+}
+
+/*.outset{
+    display: flex;
+    align-items: center;
+    min-width: 90vh;
+    background-position: center;
+}
+
+.outset .p1{
+    max-width: 45rem;
+
+}
+
+.outset .p1 h1{
+    font-size: 2.9rem;
+    color: rgb(0, 0, 32);
+    font-family: orbitron;
+    }
+
+.outset .p1 span{
+    font-size: 1.8rem;
+    color: rgb(6, 3, 31);
+    padding: 1rem 12px;
+    line-height: 1;
+    }
+.outset .p1 p{
+    
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    line-height: 1.5;
+    }
+
+        .senac strong{
+            color: rgb(255, 255, 255);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    /*parte 2 da section/
+        .about {
+    background-color:;  padding: 20px;
+        }
+    h2{
+    text-align: center;  font-family: orbitron;
+    font-size: 2.5rem;     color: rgb(0, 0, 32);}
+
+    main{
+    overflow: hidden;}
+    .txt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px; max-width: 100%;
+    padding-left: 120px;  gap: 18rem; }
+    .tx1{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    width: 370px;
+    text-align: left;
+    line-height: 1.8rem;}
+      
+
+    .todo-section {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        
+    }
+    
+    .text-container {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: 50rem;
+        text-align: center;
+        margin-top: 1px;
+    }
+    
+    .todo-lists {
+        display: flex;
+        gap: 70px;
+        margin-top: 100px;
+    }
+    
+    .list ul {
+        list-style-type: disc;
+        padding-left: 30px;
+    }
+    
+    .list ul li {
+
+        margin-bottom: 10px;
+        text-align: left;
+        padding: 1rem 12px;
+       line-height: 1;
+    }
+    .list li {
+        color: rgb(255, 255, 255);
+        font-size: 1.3rem;
+    }
+    .lii{
+        color: rgb(255, 255, 255);
+        font-size: 1.4rem;  
+    }
+    .titulo-ul{
+        font-size: 2rem;
+        text-align: left;
+        font-family: orbitron;
+    }
+    .fim{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: orbitron;
+        color: white;
+        height: 20rem;
+    }
+    footer{
+        background-color: #002F59;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+      
+                    
+        /*media queries/
+@media (min-width:768px) and  (max-width:991px) {
+
+    html{ font-size: 80%;}
+
+    header{padding: 1.5rem 5%;}
+
+    section{padding: 2rem;}
+
+    .outset{background-position: center left;}
+    
+    .txt {grid-template-columns: 1fr; gap: 6rem; }
+
+    .todo-section { flex-direction: column;}
+
+    .todo-lists {flex-direction: column;} }
+
+
+@media (max-width:450px){
+
+    html{     font-size: 70%;}
+
+    .fa-bars{ display: block;
+              cursor: pointer; 
+              font-size: 1.5rem;}
+
+    .navbar{  position: absolute;
+              top: 100%; 
+              right: 0;
+              left: 0;
+              border-top: .1rem solid rgb(0, 0, 53);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              transition: clip-path .4s ease-in-out;
+              display: none;}
+
+    header #toggler:checked ~ .navbar{
+              display: block;
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+
+    .navbar a{margin:0;
+              padding:1rem; 
+              display: block;
+              border-bottom:.1rem solid rgb(2, 0, 110);
+              background-color: #002F59;
+              text-align: center;} 
+
+    /*fim da header*/
+
+    /*fazer a parte section outset responsiva/
+    .outset { font-size: 5px;
+              display: flex;
+              flex-direction: row;
+              padding: 1rem;
+              width: 100%;}
+    
+    .outset .p1 h1{
+
+              padding: 5rem;
+              max-width: 50%;
+              display: flex;
+              width: 100%;
+              height: 20px;
+              box-sizing: border-box; }
+
+    .outset .p1 span{
+              line-height: 1.5;
+              color: rgb(10, 1, 49);
+              padding: 10px;
+              max-width: 85%;
+              display: flex;
+              width: 100%;
+              height:30px ;
+              box-sizing: border-box; }
+    .outset .p1 p{
+              padding: ;
+              max-width: 80%;
+              display: block;
+              width: 100%;
+              color: white;
+              box-sizing: border-box; }
+
+    /*PARTE 2DA SECTION/
+        .txt{ grid-template-columns: 1fr; 
+              padding: 1rem; 
+              gap: 1rem;}
+
+        .tx1{ line-height: 1.8;
+              font-size: 1.2rem; 
+              width: 100%; 
+              text-align: left;
+              padding:.5rem;}
+
+        .image-container img{max-width: 80%; }
+        }
