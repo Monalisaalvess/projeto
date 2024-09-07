@@ -110,3 +110,100 @@ input{
     a{
     text-decoration: none;color: #000000;
     }
+
+
+    @media (max-width: 768px) {
+        /* Ajuste do header */
+        header {
+            font-size: 1.2rem;
+            padding: 1rem 2%;
+        }
+    
+        /* Ajuste da section */
+        section {
+            grid-template-columns: 1fr;
+            padding: 3rem;
+            gap: 3rem;
+        }
+    
+        /* Ajuste do texto da introdução */
+        .introdução {
+            padding: 2rem;
+            min-width: auto;
+        }
+    
+        /* Ajuste da barra de pesquisa e botão */
+        .pesquisa {
+            padding-top: 3rem;
+            padding-left: 1rem;
+        }
+    
+        input {
+            width: 100%;
+            font-size: 1rem;
+        }
+    
+        .btn {
+            padding: 0.6rem 1.5rem;
+            font-size: 1rem;
+        }
+    
+        /* Ajuste do recado */
+        .recado {
+            padding: 8rem;
+        }
+    
+        .tex {
+            padding: 2rem;
+        }
+    
+        /* Ajuste do footer */
+        footer {
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        /* Ajustes para smartphones */
+        header {
+            font-size: 1rem;
+            padding: 0.5rem 1%;
+        }
+    
+        section {
+            padding: 2rem;
+            gap: 1rem;
+        }
+    
+        .introdução {
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+    
+        .pesquisa {
+            padding-top: 2rem;
+            padding-left: 0.5rem;
+        }
+    
+        input {
+            width: 100%;
+            font-size: 0.9rem;
+        }
+    
+        .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+    
+        .recado {
+            padding: 5rem;
+        }
+    
+        .tex {
+            padding: 1rem;
+        }
+    
+        footer {
+            font-size: 0.9rem;
+        }
+    }
